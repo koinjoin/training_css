@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .wrap {
+            background: #eeeeee;
+            width: 900px;
+            /* margin: 0 auto; */
+            position: relative;
+            left: 50%;
+            margin-left: -450px;
+        }
+
+        .header {
+            background: #bbbbbb;
+            width: auto;
+            height: 200px;
+            padding: 40px 30px;
+            display: flex;
+        }
+
+        .title-bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .title-bar h1,
+        .title-bar h2 {
+            margin-top: 0;
+        }
+
+        .main {
+            padding: 0 25px 0 0;
+            position: relative;
+            height: auto;
+        }
+
+        .main-content {
+            float: right;
+            width: 80%;
+        }
+
+        .main-content img {
+            width: 100%;
+        }
+
+        .menu {
+            background-color: bisque;
+            float: left;
+            width: 160px;
+            height: 100%;
+            position: absolute;
+        }
+
+        .footer {
+            background: #555555;
+            color: #ffffff;
+            padding: 25px 25px 50px;
+            text-align: center;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <img src="img/logo.png" alt="site logo">
+            <div class="title-bar">
+                <h1 class="title">CSS활용강의</h1>
+                <h2 class="semi-title">레이아웃 1 - 단일 레이아웃 만들기</h2>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-content">
+                <h3>레이아웃을 만들고 가운데 배치하기</h3>
+                <img src="img/bg1.jpg" alt="background image">
+                <p>국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다. 이 헌법시행 당시의 대법원장과 대법원판사가 아닌
+                    법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다. 헌법개정은 국회재적의원 과반수 또는 대통령의 발의로 제안된다. 각급 선거관리위원회는 선거인명부의 작성등
+                    선거사무와 국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다. 법률이 헌법에 위반되는 여부가 재판의 전제가 된 경우에는 법원은 헌법재판소에 제청하여 그 심판에 의하여
+                    재판한다. 국회는 의원의 자격을 심사하며, 의원을 징계할 수 있다.</p>
+                <p>공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.
+                    공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 대법원장은 국회의 동의를 얻어 대통령이 임명한다. 여자의 근로는 특별한 보호를 받으며, 고용·임금 및
+                    근로조건에 있어서 부당한 차별을 받지 아니한다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다. 대통령은 국무총리·국무위원·행정각부의 장 기타 법률이 정하는 공사의 직을
+                    겸할 수 없다. 대통령은 헌법과 법률이 정하는 바에 의하여 공무원을 임면한다.</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>홈</li>
+                    <li>회사소개</li>
+                    <li>뉴스</li>
+                    <li>제품소개</li>
+                    <li>고객센터</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer">
+            <span>2015.CSS활용강좌 All rights reserved.</span>
+        </div>
+    </div>
+</body>
+
+</html>
