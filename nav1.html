@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .wrap {
+            background: #eeeeee;
+            width: 90%;
+            min-width: 600px;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: #bbbbbb;
+            width: auto;
+            height: 200px;
+            padding: 40px 30px;
+            display: flex;
+        }
+
+        .title-bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .title-bar h1,
+        .title-bar h2 {
+            margin-top: 0;
+        }
+
+        .main {
+            position: relative;
+            height: auto;
+        }
+
+        .main-content {
+            padding: 25px 25px 0;
+            float: right;
+            width: 80%;
+        }
+
+        .main-content img {
+            width: 100%;
+        }
+
+        .menu {
+            background-color: #666666;
+            float: left;
+            width: 20%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .menu>ul {
+            margin: 5px;
+        }
+
+        .menu>ul>li {
+            margin-bottom: 5px;
+            background-color: #6688cc;
+        }
+
+        .menu>ul>li.active {
+            margin-bottom: 5px;
+            background-color: #99eedd;
+        }
+
+        .menu>ul>li>a {
+            display: block;
+            padding: 8px;
+            padding-left: 40px;
+            background: url("img/bullet.png") no-repeat;
+            background-position: 20px 15px;
+        }
+
+        .menu>ul>li>a:hover {
+            background-color: #99eedd;
+        }
+
+        .menu>ul>li>ul {
+            display: none;
+        }
+
+        .menu>ul>li:hover>ul,
+        .menu>ul>li.active>ul {
+            display: block;
+        }
+
+        .menu>ul>li>ul>li {
+            margin-bottom: 5px;
+        }
+
+        .menu>ul>li>ul>li>a {
+            display: block;
+            padding: 8px;
+            padding-left: 45px;
+        }
+
+        .menu>ul>li>ul>li>a:hover {
+            background-color: #ee83d3;
+        }
+
+        .footer {
+            background: #555555;
+            color: #ffffff;
+            padding: 25px 25px 50px;
+            text-align: center;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <img src="img/logo.png" alt="site logo">
+            <div class="title-bar">
+                <h1 class="title">CSS활용강의</h1>
+                <h2 class="semi-title">레이아웃 1 - 단일 레이아웃 만들기</h2>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-content">
+                <h3>레이아웃을 만들고 가운데 배치하기</h3>
+                <img src="img/bg1.jpg" alt="background image">
+                <p>국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다. 이 헌법시행 당시의 대법원장과 대법원판사가 아닌
+                    법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다. 헌법개정은 국회재적의원 과반수 또는 대통령의 발의로 제안된다. 각급 선거관리위원회는 선거인명부의 작성등
+                    선거사무와 국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다. 법률이 헌법에 위반되는 여부가 재판의 전제가 된 경우에는 법원은 헌법재판소에 제청하여 그 심판에 의하여
+                    재판한다. 국회는 의원의 자격을 심사하며, 의원을 징계할 수 있다.</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active"><a title="홈" href="#">홈</a></li>
+                    <li><a title="회사소개" href="#">회사소개</a></li>
+                    <li>
+                        <a title="뉴스" href="#">뉴스</a>
+                        <ul>
+                            <li title="뉴스1"><a href="#">뉴스1</a></li>
+                            <li title="뉴스2"><a href="#">뉴스2</a></li>
+                            <li title="뉴스3"><a href="#">뉴스3</a></li>
+                        </ul>
+                    </li>
+                    <li><a title="제품소개" href="#">제품소개</a></li>
+                    <li><a title="고객센터" href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer">
+            <span>2015.CSS활용강좌 All rights reserved.</span>
+        </div>
+    </div>
+</body>
+
+</html>
