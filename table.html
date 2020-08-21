@@ -16,7 +16,7 @@
         }
 
         .wrap {
-            background: #f3e0be;
+            background: #ffffff;
             width: 95%;
             min-width: 950px;
             max-width: 1200px;
@@ -29,6 +29,31 @@
             height: 200px;
             padding: 40px 30px;
             display: flex;
+        }
+
+        .main {
+            padding: 20px 10px;
+            border-left: #eeeeee solid 1px;
+            border-right: #eeeeee solid 1px;
+
+        }
+
+        .movieTable {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        .movieTable th {
+            background-color: #eeee99;
+            padding: 10px 0;
+        }
+
+        .movieTable .poster {
+            width: 5%;
+        }
+
+        .movieTable>tbody>tr>td {
+            text-align: center;
         }
 
         .title-bar h1,
@@ -51,10 +76,45 @@
             <img src="img/logo.png" alt="site logo">
             <div class="title-bar">
                 <h1 class="title">CSS활용강의</h1>
-                <h2 class="semi-title">레이아웃 1 - 단일 레이아웃 만들기</h2>
+                <h2 class="semi-title">테이블 활용</h2>
             </div>
         </div>
-
+        <div class="main">
+            <table class="movieTable">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th class="poster">포스터</th>
+                        <th>영화제목</th>
+                        <th>영화감독</th>
+                        <th>상영일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="img/movie1.jpg" alt="맘마미아"></td>
+                        <td>맘마미아</td>
+                        <td>필리다 로이드</td>
+                        <td>2008.09.03</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="img/movie2.jpg" alt="건축학개론"></td>
+                        <td>건축학개론</td>
+                        <td>이용주</td>
+                        <td>2012.03.22</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="img/movie3.jpg" alt="비긴어게인"></td>
+                        <td>비긴어게인</td>
+                        <td>존 카니</td>
+                        <td>2014.08.13</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="footer">
             <span>2015.CSS활용강좌 All rights reserved.</span>
         </div>
