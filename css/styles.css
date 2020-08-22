@@ -1,0 +1,23 @@
+@import "header.css";
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "나눔고딕", "Nanum Gothic", san-serif;
+    font-size: 12px;
+}
