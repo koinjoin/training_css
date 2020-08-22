@@ -1,0 +1,33 @@
+.mainTop{
+    background-color: #00A085;
+    font-size: 12px;
+    padding: 14px 20px 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    width: 100%;
+    min-width: 750px;
+}
+.mainTop>.mainTop-menu>ul{
+    display:flex;
+    align-items: center;
+}
+.mainTop>.mainTop-menu>ul>li{
+    margin-right: 35px;
+}
+.mainTop>.mainTop-menu>ul>li>a{
+    color:#ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.mainTop>.mainTop-menu>ul>li:nth-child(1)>a>img{
+    margin-right: 3px;
+}
+.mainTop>.mainTop-browser>a{
+    color:#ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}

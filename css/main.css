@@ -1,0 +1,8 @@
+@import "navbar.css";
+@import "maincontent.css";
+@import "subcontent.css";
+
+.main{
+    display: flex;
+    
+}

@@ -1,4 +1,5 @@
-@import "header.css";
+@import "maintop.css";
+@import "wrap.css";
 
 * {
     box-sizing: border-box;
@@ -19,5 +20,5 @@ li {
 body {
     margin: 0;
     font-family: "나눔고딕", "Nanum Gothic", san-serif;
-    font-size: 12px;
+    font-size: 14px;
 }

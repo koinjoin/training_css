@@ -1,0 +1,12 @@
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+.wrap{
+    background-color: bisque;
+    width:95%;
+    margin: 0 auto;
+    margin-top: 40px;
+    min-width: 900px;
+    max-width: 960px;
+}
