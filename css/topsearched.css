@@ -1,0 +1,26 @@
+.subContent>.topSearched{
+    border: #DDDDDD solid 1px;
+}
+.subContent>.topSearched>.title{
+    margin: 18px 24px 0 12px;
+    padding-bottom: 12px;
+    border-bottom: #DDDDDD solid 1px;
+    display: flex;
+    align-items: center;
+    color: #00A085;
+    font-weight: bold;
+}
+.subContent>.topSearched>.result{
+    margin: 0 24px 16px 12px;
+    padding: 10px 0 0 10px;
+}
+.subContent>.topSearched>.result>ul>li{
+    color:#00A085;
+}
+.subContent>.topSearched>.result>ul>li>span{
+    color: #7D7D7D;
+    margin-left: 16px;
+}
+.subContent>.topSearched>.result>ul>li:last-child>span{
+    margin-left:7px;
+}

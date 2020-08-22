@@ -1,0 +1,9 @@
+@import "topsearched.css";
+@import "weather.css";
+.subContent{
+    width: 25%;
+
+}
+.topSearched{
+    margin-bottom: 16px;
+}
